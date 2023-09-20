@@ -1,3 +1,7 @@
 llama-index
 openai
 pypdf
+torch 
+transformers 
+sentencepiece 
+Pillow

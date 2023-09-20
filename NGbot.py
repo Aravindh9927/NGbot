@@ -7,7 +7,7 @@ from llama_index import SimpleDirectoryReader
 st.set_page_config(page_title="Chat with Nutri-Grade policy documents (powered by LlamaIndex)", page_icon="", layout="centered", initial_sidebar_state="auto", menu_items=None)
 openai.api_key = st.secrets.openai_key
 st.title("Chat with Nutri-Grade policy documents")
-st.header("powered by LlamaIndex and finetuned GPT3.5turbo")
+st.caption("powered by LlamaIndex and finetuned GPT3.5turbo")
 if "messages" not in st.session_state.keys(): # Initialize the chat messages history
     st.session_state.messages = [
         {"role": "assistant", "content": "Ask me a question about Nutri-Grade"}

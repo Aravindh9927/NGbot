@@ -29,9 +29,9 @@ def load_data():
         # Load the finetuned model 
         ft_model_name = "ft:gpt-3.5-turbo-0613:personal::80aOEYbP"
         ft_context = ServiceContext.from_defaults(llm=OpenAI(model=ft_model_name, temperature=0.2), context_window=2048, system_prompt="You are an expert on the Nutri-Grade documents and policy and your job is to answer questions related to the policy. Assume that all questions are related to the Nutri-Grade policy. Keep your answers technical and based on facts – do not hallucinate features.")
-        index = VectorStoreIndex.from_documents(docs, service_context=ft_context)
         return index
 
+index = load_data()
 chat_engine = index.as_chat_engine(chat_mode="condense_question", verbose=True)
 
 if prompt := st.chat_input("Your question"): # Prompt for user input and save to chat history

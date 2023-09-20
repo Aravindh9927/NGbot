@@ -9,7 +9,7 @@ st.set_page_config(page_title="Chat with Nutri-Grade policy documents (powered b
 openai.api_key = st.secrets.openai_key
 st.title("Chat with Nutri-Grade policy documents")
 st.caption("powered by LlamaIndex and finetuned GPT3.5turbo")
-st.caption("note: as an AI assistant, I may display inaccurate information that doesn’t represent the policy's views. I was created by a being who isn't from MOH or HPB.")
+st.caption("note: I was created by a being who isn't from MOH or HPB. As an AI assistant, I may display inaccurate information that doesn’t represent the policy's views.")
 
 if "messages" not in st.session_state.keys(): # Initialize the chat messages history
     st.session_state.messages = [

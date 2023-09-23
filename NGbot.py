@@ -5,9 +5,9 @@ import openai
 from llama_index import StorageContext, load_index_from_storage
 
 
-st.set_page_config(page_title="Chat with Nutri-Grade policy documents (powered by LlamaIndex)", page_icon="", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="Chat with Nutri-Grade policy documents (powered by LlamaIndex)", page_icon="☕️🧃🥤", layout="centered", initial_sidebar_state="auto", menu_items=None)
 openai.api_key = st.secrets.openai_key
-st.title("Chat with Nutri-Grade policy documents")
+st.title("Chat with Nutri-Grade documents ☕️🧃🥤")
 st.caption("powered by LlamaIndex and finetuned GPT3.5turbo")
 st.caption("Disclaimer: I was created by a being who isn't from MOH or HPB for pure experimental use. All source of documents are from MOH or HPB websites. As an AI assistant, I may display inaccurate information that doesn’t represent the policy's views.")
 

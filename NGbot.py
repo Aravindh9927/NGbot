@@ -5,7 +5,7 @@ import openai
 from llama_index import StorageContext, load_index_from_storage
 
 
-st.set_page_config(page_title="Chat with Nutri-Grade policy documents (powered by LlamaIndex)", page_icon="🥤", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="Chat with Nutri-Grade documents", page_icon="🥤", layout="centered", initial_sidebar_state="auto", menu_items=None)
 openai.api_key = st.secrets.openai_key
 st.markdown("<h1 style='text-align: center;'>Chat with Nutri-Grade documents ☕️🧃🥤</h1>", unsafe_allow_html=True)
 st.caption("powered by LlamaIndex and finetuned GPT3.5turbo")
